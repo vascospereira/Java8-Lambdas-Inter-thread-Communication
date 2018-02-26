@@ -1,14 +1,13 @@
 public class Person {
-	
 	public enum Sex {
-        MALE, FEMALE
-    }
-	
+		MALE, FEMALE
+	}
+
 	private Sex sex;
 	private String firstName;
 	private String lastName;
 	private int age;
-	
+
 	public Person(Sex sex, String firstName, String lastName, int age) {
 		this.sex = sex;
 		this.firstName = firstName;
@@ -39,7 +38,7 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
+
 	public Sex getSex() {
 		return sex;
 	}
@@ -52,7 +51,4 @@ public class Person {
 	public String toString() {
 		return "Person [sex=" + sex + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
 	}
-
-	
-	
 }
